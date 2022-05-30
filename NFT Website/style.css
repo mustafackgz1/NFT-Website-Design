@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: 'Macondo', cursive;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ---------------- HEADER START ---------------- */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    padding-bottom: 40px;
+    z-index: 999;
+    transition: all ease 0.5s;
+}
+header:hover{
+    background-color: #fff;
+}
+.logo img{
+    width: 100%;
+    max-width: 100px;
+    z-index: 999;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+header ul li a{
+    color: black;
+    font-size: 24px;
+    transition: all ease 0.6s;
+}
+header ul li a:hover{
+    color: rgba(0, 0, 0, 0.363);
+}
+header .icons i{
+    color: black;
+}
+header .icons i:hover{
+    color: rgba(0, 0, 0, 0.527);
+}
+header .topics .info{
+    position: relative;
+    max-width: 400px;
+    margin-top: 3px;
+}
+header .topics .nft{
+    display: none;
+}
+header .topics li:hover .nft{
+    display: block;
+    position: absolute;
+    font-size: 18px;
+}
+header .topics .buy{
+    display: none;
+}
+header .topics li:hover .buy{
+    display: block;
+    position: absolute;
+    font-size: 18px;
+}
+header .topics .ether{
+    display: none;
+}
+header .topics li:hover .ether{
+    display: block;
+    position: absolute;
+    font-size: 18px;
+}
+header .topics .col{
+    display: none;
+}
+header .topics li:hover .col{
+    display: block;
+    position: absolute;
+    font-size: 18px;
+}
+header .topics .market{
+    display: none;
+}
+header .topics .market a{
+    font-size: 18px;
+}
+header .topics li:hover .market{
+    display: block;
+    position: absolute;
+    font-size: 18px;
+}
+
+/* ---------------- HEADER FINISH ---------------- */
+
+
+/* ---------------- CONTENT START ---------------- */
+
+.content{
+    display: flex;
+    flex-wrap: nowrap;
+    height:100vh;
+}
+.content .item{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.content .item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover ;
+}
+.content .item:hover{
+    width: 200%;
+}
+.content .item:hover .text .collection{
+    opacity: 1;
+}
+.content .item .text .collection{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+.content .item .text .collection img{
+    width: 40px;
+    height: auto;
+    margin-left: 25px;
+}
+.content .item .text .collection img:hover{
+    width: 55px;
+}
+
+/* ---------------- CONTENT FINISH ---------------- */
